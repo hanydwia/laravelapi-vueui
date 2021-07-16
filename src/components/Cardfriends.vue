@@ -12,12 +12,15 @@
     <p class="card-text">
         {{ friend.alamat }}
     </p>
+     <p class="card-text">
+        {{ friend.groups.name }}
+    </p>
     
   </div>
   <div class="card-footer text-muted">
       <router-link 
       class="btn btn-primary" 
-            :to="{name:'Detailfriends', params:{ id: friend.id} } "
+            :to="{ name: 'Detailfriends', params: { id: friend.id } } "
               >Detail</router-link
             >
             </div>
